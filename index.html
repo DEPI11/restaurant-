@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ملوك الشواية | قائمة الطعام</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ملوك الشواية</h1>
+    <p>أشهى المأكولات المشوية والمعكرونة</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button class="active" data-filter="all">الكل</button>
+    <button data-filter="grill">مشويات</button>
+    <button data-filter="pasta">معكرونة</button>
+    <button data-filter="sandwich">سندويشات</button>
+    <button data-filter="special">وجبات خاصة</button>
+  </div>
+
+  <div class="menu">
+    <!-- مشويات -->
+    <div class="menu-item" data-category="grill">
+      <img src="images/chicken_blue.jpg" alt="تشكن بلو">
+      <div class="item-info">
+        <h3>تشكن بلو</h3>
+        <p class="price">140 ج .م</p>
+        <p class="description">صدور دجاج مع صوص الجبنة، تقدم مع أرز وخضار</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="grill">
+      <img src="images/sweet_chilli.jpg" alt="سويت تشيلي">
+      <div class="item-info">
+        <h3>سويت تشيلي</h3>
+        <p class="price">140 ج .م</p>
+        <p class="description">صدور دجاج مع صوص السويت تشيلي والخضار، تقدم مع أرز</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-category="grill">
+      <img src="images/chicken_superm.jpg" alt="تشكن سوبرم">
+      <div class="item-info">
+        <h3>تشكن سوبرم</h3>
+        <p class="price">125 ج .م</p>
+        <p class="description">صدور دجاج مشوية بصوص الإستيك الحار مع التركي والموزاريلا</p>
+      </div>
+    </div>
+
+    <!-- معكرونة -->
+    <div class="menu-item" data-category="pasta">
+      <img src="images/pasta_carbonara.jpg" alt="سباغيتي كاربونارا">
+      <div class="item-info">
+        <h3>باستا كاربونارا</h3>
+        <p class="price">125 ج .م</p>
+        <p class="description">معكرونة مع صوص الكريمة والبيكن والجبنة</p>
+      </div>
+    </div>
+
+    <!-- سندويشات -->
+    <div class="menu-item" data-category="sandwich">
+      <img src="images/manakish_fajita.jpg" alt="منفوشة فاهيتا">
+      <div class="item-info">
+        <h3>منفوشة فاهيتا</h3>
+        <p class="price">80 ج .م</p>
+        <p class="description">خبز منفوخ مع دجاج فاهيتا والخضار</p>
+      </div>
+    </div>
+
+    <!-- وجبات خاصة -->
+    <div class="menu-item" data-category="special">
+      <img src="images/beef_stroganoff.jpg" alt="بيف استرايهاتوف">
+      <div class="item-info">
+        <h3>بيف استرايهاتوف</h3>
+        <p class="price">190 ج .م</p>
+        <p class="description">شرائح لحم ستيك مع صوص المشروم والخضار، تقدم مع أرز وبطاطس</p>
+      </div>
+    </div>
+
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

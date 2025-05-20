@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: 'Tahoma', Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: right;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #c00;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Tahoma';
+  transition: all 0.3s;
+}
+
+button.active {
+  background: #ffcc00;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Menu Grid */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-info {
+  padding: 15px;
+}
+
+.price {
+  color: #c00;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}
